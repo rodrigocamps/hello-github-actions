@@ -23,5 +23,3 @@ jobs:
       - uses: actions/checkout@v1
       - name: Mandar saludo
         run: echo "${{ github.event.inputs.message }} ${{ fromJSON('["", ""]')[github.event.inputs.use-emoji == 'true'] }} ${{ github.event.inputs.name }}"
-        with:
-          MY_NAME: "Rodrigo Camps Palacios Malarino"
