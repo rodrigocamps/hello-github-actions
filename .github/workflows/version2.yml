@@ -10,7 +10,7 @@ on:
         - Abel
         - Rodrigo
         - Gustavo
-      message:
+      mensaje:
         required: true
 jobs:
   saludar:
@@ -19,4 +19,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
-        run: echo "${{ github.event.inputs.message }}  para ${{ github.event.inputs.name }}"
+        run: echo "${{ github.event.inputs.mensaje }}  para ${{ github.event.inputs.nombre }}"
