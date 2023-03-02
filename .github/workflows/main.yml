@@ -1,6 +1,6 @@
 name: A workflow for my Hello World file
 on: push
-    workflow_dispatch
+  workflow_dispatch:
 jobs:
   build:
     name: Hello world action
