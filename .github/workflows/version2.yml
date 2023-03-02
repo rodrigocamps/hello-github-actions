@@ -21,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
-        run: echo "Mensaje para ${{ github.event.inputs.nombre }}: ${{ github.event.inputs.mensaje }} ${{ vars.MENSAJITO }}"
+        run: echo "Mensaje para ${{ github.event.inputs.nombre }} ${{ github.event.inputs.mensaje }} ${{ vars.MENSAJITO }}"
