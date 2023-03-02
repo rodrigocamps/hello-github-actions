@@ -18,8 +18,8 @@ jobs:
   saludar:
     name: Saludo2
     runs-on: ubuntu-latest
-    environment: ${{ vars.environment }}
+    environment: ${{ github.event.inputs.environment }}
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
-        run: echo "Mensaje para ${{ github.event.inputs.nombre }} ${{ github.event.inputs.mensaje }} Entorno ${{ vars.mensajito }}"
+        run: echo "Mensaje para ${{ github.event.inputs.nombre }} ${{ github.event.inputs.mensaje }} Entorno ${{ github.event.inputs.environment}} ${{ vars.mensajito }}"
