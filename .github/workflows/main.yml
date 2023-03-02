@@ -1,6 +1,5 @@
 name: Un saludo de mi parte
 on: 
-    workflow_dispatch:
     push:
 jobs:
   build:
