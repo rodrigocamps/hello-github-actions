@@ -12,6 +12,8 @@ on:
         - Gustavo
       mensaje:
         required: true
+      environment:
+        type: environment
 jobs:
   saludar:
     name: Saludo2
@@ -19,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
-        run: echo "${{ github.event.inputs.mensaje }}  para ${{ github.event.inputs.nombre }}"
+        run: echo "Mensaje para ${{ github.event.inputs.nombre }}: ${{ github.event.inputs.mensaje }} ${{ github.event.inputs.MENSAJE }}"
