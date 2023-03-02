@@ -1,12 +1,12 @@
-name: "Hello Actions"
-description: "Greet someone"
-author: "octocat@github.com"
+name: "Accion saludo"
+description: "Saludar a alguien"
+author: "rcamps@fibertel.com.ar"
 
 inputs:
   MY_NAME:
-    description: "Who to greet"
+    description: "A quien saludar"
     required: true
-    default: "World"
+    default: "Todos"
 
 runs:
   using: "docker"
