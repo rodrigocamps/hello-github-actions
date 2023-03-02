@@ -18,7 +18,7 @@ jobs:
   saludar:
     name: Saludo2
     runs-on: ubuntu-latest
-    environment: ${{ vars.ENVIRONMENT_STAGE }}
+    environment: ${{ vars.environment }}
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
