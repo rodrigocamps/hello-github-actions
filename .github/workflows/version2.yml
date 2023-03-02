@@ -1,18 +1,18 @@
 name: Un saludo de mi parte
 on: 
-    workflow_dispatch:
-      inputs:
-        nombre:
-          type: choice
-          description: a quien saludar
-          options:
-          - Abel
-          - Rodrigo
-          - Gustavo
-       message:
-         required: true
-       environment:
-         type: environment
+  workflow_dispatch:
+    inputs:
+      nombre:
+        type: choice
+        description: a quien saludar
+        options:
+        - Abel
+        - Rodrigo
+        - Gustavo
+      message:
+        required: true
+      environment:
+        type: environment
     push:
 jobs:
   saludar:
