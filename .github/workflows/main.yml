@@ -1,9 +1,10 @@
-name: A workflow for my Hello World file
+name: Un saludo de mi parte
 on: 
     workflow_dispatch:
+    push:
 jobs:
   build:
-    name: Hello world action
+    name: Saludo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
