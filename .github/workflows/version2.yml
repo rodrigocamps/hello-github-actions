@@ -12,9 +12,6 @@ on:
         - Gustavo
       message:
         required: true
-      environment:
-        type: environment
-    push:
 jobs:
   saludar:
     name: Saludo2
@@ -22,4 +19,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Mandar saludo
-        run: echo "${{ github.event.inputs.message }} ${{ fromJSON('["", ""]')[github.event.inputs.use-emoji == 'true'] }} ${{ github.event.inputs.name }}"
+        run: echo "${{ github.event.inputs.message }}  para ${{ github.event.inputs.name }}"
