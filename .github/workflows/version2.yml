@@ -1,4 +1,4 @@
-name: Un saludo de mi parte
+name: Un saludo desde bash 
 on: 
   workflow_dispatch:
     inputs:
